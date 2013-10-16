@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131016151730) do
+ActiveRecord::Schema.define(version: 20131016152503) do
+
+  create_table "business_locations", force: true do |t|
+    t.string   "name"
+    t.integer  "parent_location_id"
+    t.text     "address"
+    t.integer  "mobile_number"
+    t.integer  "created_by_user_id"
+    t.date     "creation_date"
+    t.integer  "created_by"
+    t.integer  "managed_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "location_levels", force: true do |t|
     t.integer  "level"

@@ -1,0 +1,25 @@
+<h1>Listing business_locations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @business_locations.each do |business_location| %>
+      <tr>
+        <td><%= link_to 'Show', business_location %></td>
+        <td><%= link_to 'Edit', edit_business_location_path(business_location) %></td>
+        <td><%= link_to 'Destroy', business_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Business location', new_business_location_path %>

@@ -1,4 +1,6 @@
 Mfsolutions::Application.routes.draw do
+  resources :business_locations
+
   resources :location_levels
 
   # The priority is based upon order of creation: first created -> highest priority.
