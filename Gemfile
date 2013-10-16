@@ -53,9 +53,6 @@ group :development,:test do
   gem 'debugger'
   gem 'xpath'
   gem 'cucumber'
-  gem "Selenium"
-  gem "selenium-client"
-  gem "selenium-webdriver", "~> 2.34.0"
   gem "rspec-core", "~> 2.13.1"
   gem 'bootstrap-sass'
 	gem 'will_paginate'
@@ -63,9 +60,9 @@ group :development,:test do
 	gem 'heroku'
 end
 
-group :production, :staging do
-  gem 'pg'
-end
+# group :production, :staging do
+#   gem 'pg'
+# end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

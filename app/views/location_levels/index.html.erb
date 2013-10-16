@@ -1,0 +1,25 @@
+<h1>Listing location_levels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @location_levels.each do |location_level| %>
+      <tr>
+        <td><%= link_to 'Show', location_level %></td>
+        <td><%= link_to 'Edit', edit_location_level_path(location_level) %></td>
+        <td><%= link_to 'Destroy', location_level, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Location level', new_location_level_path %>
