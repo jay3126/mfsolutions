@@ -1,4 +1,6 @@
 Mfsolutions::Application.routes.draw do
+  resources :users
+
   resources :business_locations
 
   resources :location_levels
