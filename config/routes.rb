@@ -1,4 +1,6 @@
 Mfsolutions::Application.routes.draw do
+  resources :staff_members
+
   resources :users
 
   resources :business_locations
