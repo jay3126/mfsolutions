@@ -21,6 +21,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'thin'
+gem 'execjs'
+gem 'therubyracer'
+gem 'httparty'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -55,9 +58,9 @@ group :development,:test do
   gem 'cucumber'
   gem "rspec-core", "~> 2.13.1"
   gem 'bootstrap-sass'
-	gem 'will_paginate'
-	gem 'bootstrap-will_paginate'
-	gem 'heroku'
+  gem 'will_paginate'
+  gem 'bootstrap-will_paginate'
+  gem 'heroku'
 end
 
 # group :production, :staging do
